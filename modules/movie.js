@@ -63,8 +63,21 @@ const movies = [
     },
   ]
 
+ 
+function ajouterDisLikes(holderDisLokes){
+	newDisLikes = document.createElement('span');
+    newDisLikes.innerHTML = "<span class=\"zone-dislikes\">DISLIKES</span>";
+    	
+    holder.appendChild(newDisLikes);
+    
+    contenuDisLikes = document.createElement('p');
+    let idContenuDisLikes = "Dislikes-" + i.toString(); 
+    contenuDisLikes.setAttribute("id", idContenuDisLikes);
+    contenuDisLikes.innerHTML = "<p>" + movies[i].dislikes + "</p></br></br></br>";
+    	
+    holder.appendChild(contenuDisLikes);
+}
 
-  
 
 
 {
